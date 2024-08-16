@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 html {
@@ -83,18 +83,38 @@ p {
 
 .nav__link,
 .nav__link--2 {
+  display: inline-block;
+  position: relative;
   text-decoration: none;
+  padding-bottom: 6px;
   color: rgb(36, 62, 99);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
-  letter-spacing: 0.9px;
+  letter-spacing: 0.5px;
 }
 
 .nav__link:hover,
 .nav__link--2:hover {
-  color: rgb(131, 90, 213);
-  border-bottom: 2px solid rgb(131, 90, 213);
-  padding-bottom: 4px;
+  color: rgb(100, 21, 255);
+}
+
+.nav__link::after,
+.nav__link--2::after {
+  content: '';
+  position: absolute;
+  background-color: rgb(100, 21, 255);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.nav__link:hover::after,
+.nav__link--2:hover::after {
+  opacity: 1;
+  background-color: rgb(100, 21, 255);
 }
 
 .nav__link--push {
@@ -121,7 +141,7 @@ p {
 
 .homepage__link {
   color: rgb(36, 62, 99);
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 900;
 }
 
@@ -263,7 +283,7 @@ Landing
 
 .contact__paragraph {
   color: lightgray;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -297,9 +317,9 @@ Landing
 
 .small__paragraph {
   color: rgb(160, 174, 192);
-  font-size: 13px;
-  letter-spacing: 0.5px;
-  font-weight: bold;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
   margin-bottom: 17px;
 }
 
@@ -342,8 +362,9 @@ Features
 
 .section__title {
   color: rgb(100, 21, 255);
-  font-weight: 800;
-  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
 }
 
 .h1__margin {
@@ -353,25 +374,28 @@ Features
 .blue__h1,
 .blue__h1--3 {
   color: rgb(36, 62, 99);
-  font-size: 52px;
-  letter-spacing: 1.3px;
+  font-size: 48px;
+  letter-spacing: 1.2px;
   font-weight: 900;
 }
 
 .blue__h1--2 {
   color: rgb(36, 62, 99);
-  font-size: 52px;
-  letter-spacing: 1.3px;
+  font-size: 50px;
   font-weight: 900;
+  letter-spacing: 1.3px;
   text-align: center;
 }
 
 .blue__h2 {
+  font-size: 20px;
+  font-weight: 700;
   color: rgb(36, 62, 99);
 }
 
 .gray__text {
   color: rgb(124, 139, 161);
+  font-size: 18px;
   font-weight: 500;
   line-height: 30px;
 }
@@ -429,21 +453,23 @@ Features
 .services__text {
   display: flex;
   flex-direction: column;
-  width: 200px;
-  margin-left: 20px;
+  width: 62%;
+  margin-left: 17px;
 }
 
 .services__h2 {
-  padding-bottom: 17px;
+  padding-bottom: 15px;
   color: rgb(36, 62, 99);
   letter-spacing: 0.8px;
-  font-size: 25px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .medium__paragraph {
   color: rgb(124, 139, 161);
-  font-size: 17px;
-  line-height: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
 }
 
 /* 
@@ -535,14 +561,16 @@ Steps
   width: 50%;
 }
 
-.steps {
+.step {
   display: flex;
   gap: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .steps__text {
-  width: 300px;
+  width: 55%;
+  padding-top: 3px;
+  margin-left: 3px;
 }
 
 .small__gap {
@@ -625,18 +653,21 @@ Values
 
 .values__logo--text {
   display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .gap__2 {
   margin-bottom: 25px;
 }
 
+.padding {
+  padding-top: 8px;
+}
+
 .values__paragraph {
   width: 110%;
-  margin-bottom: 50px;
-  font-size: 17px;
+  margin-bottom: 40px;
+  font-size: 16px;
   line-height: 26px;
   color: rgb(113, 128, 150);
 }
@@ -702,6 +733,7 @@ Pricing
 .gray__text--2 {
   color: rgb(124, 139, 161);
   font-weight: 500;
+  font-size: 18px;
   line-height: 30px;
   text-align: center;
   width: 600px;
@@ -722,7 +754,7 @@ Pricing
   border: 1px solid rgb(226, 232, 240);
   border-radius: 10px;
   width: 385px;
-  height: 620px;
+  height: 605px;
   margin-bottom: 190px;
 }
 
@@ -762,8 +794,8 @@ Pricing
 .plan__h3--white {
   margin-top: 32px;
   font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 1.1px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .plan__h3--white {
@@ -773,7 +805,7 @@ Pricing
 .plan__h4,
 .plan__h4--white {
   color: rgb(160, 174, 192);
-  font-size: 17px;
+  font-size: 16px;
   letter-spacing: 1.6px;
   margin: 15px 0 35px 0;
 }
@@ -785,8 +817,8 @@ Pricing
 .plan__paragraph,
 .plan__paragraph--white {
   color: rgb(113, 128, 150);
-  font-size: 17px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 24px;
   margin-top: 20px;
 }
@@ -989,9 +1021,9 @@ Testimonials
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
-  letter-spacing: 0.2px;
   color: rgb(74, 85, 104);
   margin-bottom: 37px;
+  letter-spacing: 0.1px;
 }
 
 .testimonials__bottom {
@@ -1034,14 +1066,14 @@ Testimonials
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .testimonials__line {
   border: 1px solid;
   color: rgb(226, 232, 240);
-  height: 30px;
-  margin: 10px 20px 10px 0;
+  height: 24px;
+  margin: 14px 10px 12px 0;
 }
 
 /*
@@ -1133,7 +1165,7 @@ Questions
 
 .accordion__h3 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   color: rgb(45, 55, 72);
   letter-spacing: 0.5px;
 }
@@ -1252,13 +1284,15 @@ Links
 }
 
 .links__h3 {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 700;
   color: rgb(247, 250, 252);
   margin: 27px 0;
 }
 
 .links__paragraph {
+  display: inline-block;
+  position: relative;
   margin-bottom: 16px;
   text-decoration: none;
   color: rgb(247, 250, 252);
@@ -1267,9 +1301,21 @@ Links
   letter-spacing: 0.5px;
 }
 
-.links__paragraph:hover {
-  border-bottom: 2px solid rgb(247, 250, 252);
-  padding-bottom: 4px;
+.links__paragraph::after {
+  content: '';
+  position: absolute;
+  background-color: rgb(247, 250, 252);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.links__paragraph:hover::after {
+  opacity: 1;
+  background-color: rgb(247, 250, 252);
 }
 
 .links__line {
@@ -1285,13 +1331,14 @@ Footer
 
 .footer__container {
   background-color: rgb(100, 21, 255);
-  height: 120px;
+  height: 122px;
 }
 
 .footer__info {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transform: translateY(-6px);
 }
 
 .footer__logo {
@@ -2065,10 +2112,10 @@ Small phones, large smartphones
   }
 
   .contact__wrapper {
-    width: 510px;
-    height: 387px;
-    padding: 90px 0;
-    margin: 0 34px;
+    width: 88%;
+    height: 370px;
+    padding: 70px 0;
+    margin: 0 32px;
   }
 
   .contact__h2 {
