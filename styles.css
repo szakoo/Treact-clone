@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -59,16 +59,6 @@ p {
   border-color: rgb(74, 13, 192);
 }
 
-.purple__button--5 {
-  background-color: rgb(100 21 255);
-  border: 1px solid rgb(100 21 255);
-  color: white !important;
-  border-radius: 100px;
-  outline: none;
-  padding: 13px 31px;
-  transition: all 0.3s ease;
-}
-
 .nav__links {
   transform: translate(-1px, 2px);
 }
@@ -100,7 +90,7 @@ p {
 
 .nav__link::after,
 .nav__link--2::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: rgb(100, 21, 255);
   left: 0;
@@ -163,7 +153,7 @@ p {
   right: 0;
   left: 0;
   margin: 24px 16px;
-  padding-bottom: 20px;
+  padding-bottom: 26px;
   height: 378px;
   display: flex;
   justify-content: center;
@@ -185,18 +175,28 @@ p {
 }
 
 .menu__link {
-  font-size: 19px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   letter-spacing: 0.7px;
   color: rgb(26, 32, 44);
 }
 
 .menu__list {
-  padding: 13px 0;
+  padding: 14px 0;
 }
 
 .menu__button {
-  margin-top: 25px;
+  margin-top: 26px;
+}
+
+.purple__button--5 {
+  background-color: rgb(100 21 255);
+  border: 1px solid rgb(100 21 255);
+  color: white !important;
+  border-radius: 100px;
+  outline: none;
+  padding: 14px 30px;
+  transition: all 0.3s ease;
 }
 
 .btn__menu--close {
@@ -542,7 +542,7 @@ Steps
 }
 
 .steps__container {
-  padding: 170px 0;
+  padding: 170px 0 220px 0;
   display: flex;
   align-items: center;
 }
@@ -564,7 +564,7 @@ Steps
 .step {
   display: flex;
   gap: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .steps__text {
@@ -579,7 +579,8 @@ Steps
 
 .gray__h1 {
   color: rgb(203, 213, 224);
-  font-size: 37px;
+  font-size: 36px;
+  font-weight: 600;
 }
 
 .blue__h2 {
@@ -677,7 +678,7 @@ Values
   height: 10px;
   border: 1px solid white;
   background-color: rgb(154 230 180);
-  padding: 19px 19px;
+  padding: 18px 18px;
   margin: 0 10px 10px 0;
   border-radius: 50%;
   display: flex;
@@ -690,7 +691,7 @@ Values
   height: 10px;
   border: 1px solid white;
   background-color: rgb(254, 178, 178);
-  padding: 19px 19px;
+  padding: 18px 18px;
   margin: 0 10px 10px 0;
   border-radius: 50%;
   display: flex;
@@ -773,6 +774,7 @@ Pricing
 .plan__h1--white {
   font-size: 48px;
   font-weight: 700;
+  color: rgb(26, 32, 44);
 }
 
 .plan__h1--white {
@@ -783,6 +785,7 @@ Pricing
 .plan__h2--white {
   font-size: 20px;
   font-weight: 700;
+  letter-spacing: 0.5px;
   margin: 35px 0 20px 0;
 }
 
@@ -1302,7 +1305,7 @@ Links
 }
 
 .links__paragraph::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: rgb(247, 250, 252);
   left: 0;
@@ -1466,8 +1469,8 @@ Small phones, tablets, large smartphones
   .landing__paragraph {
     margin: 10px 0 20px 0;
     width: 100%;
-    line-height: 140%;
-    font-size: 17px;
+    line-height: 150%;
+    font-size: 16px;
     text-align: center;
   }
 
@@ -1475,11 +1478,28 @@ Small phones, tablets, large smartphones
     margin: 8px 0 0 0;
     letter-spacing: 1px;
     font-size: 30px;
+    font-weight: 700;
+    width: 110%;
+    text-align: center;
   }
 
   .contact__box {
     margin: 0 0 50px 0;
+    padding: 17px 7px 17px 33px;
     width: 450px;
+  }
+
+  .purple__button--2 {
+    background-color: rgb(100 21 255);
+    border: 1px solid rgb(100 21 255);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 100px;
+    outline: none;
+    height: 52px;
+    width: 160px;
+    transition: all 0.3s ease;
   }
 
   .trusted__customers {
@@ -1490,39 +1510,46 @@ Small phones, tablets, large smartphones
 
   .trusted__customers--img {
     height: 42px;
-    width: 100%;
+    width: 101%;
     margin-bottom: 40px;
   }
 
   .small__paragraph {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.6px;
+    margin-bottom: 18px;
   }
 
   .gray__custom {
     width: 70%;
-    font-size: 16px;
-    font-weight: 500;
+    margin: 23px 230px 50px 230px;
   }
 
   .service {
     width: 50%;
   }
 
-  .blue__h1 {
-    font-size: 38px;
-    font-weight: 900;
+  .services {
+    padding: 0 30px;
   }
 
-  .gray__text {
-    font-size: 16px;
-    line-height: 27px;
+  .blue__h1 {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 45px;
+  }
+
+  .advertisement__left {
+    width: 49%;
   }
 
   .advertisement__right {
-    height: 230px;
-    width: 350px;
+    width: 51%;
+  }
+
+  .advertisement__img {
+    width: 96%;
   }
 
   .advertisement__container {
@@ -1534,22 +1561,44 @@ Small phones, tablets, large smartphones
     padding: 0;
   }
 
+  .gray__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+
+  .tablet__width {
+    width: 110%;
+  }
+
+  .medium__paragraph {
+    width: 90%;
+  }
+
   .purple__button--3 {
     margin-top: 10px;
   }
 
+  .small__paragraph--2 {
+    width: 150%;
+  }
+
   .steps__left {
-    margin: 0 50px 0 0;
     padding-left: 30px;
+    margin: 10px 50px 0 0;
   }
 
   .steps__img {
     width: 360px;
-    height: 200px;
+    height: 205px;
   }
 
   .steps__right {
     width: 37%;
+  }
+
+  .step {
+    margin-bottom: 28px;
   }
 
   .values__container {
@@ -1578,6 +1627,18 @@ Small phones, tablets, large smartphones
     transform: translate(55px, 0);
   }
 
+  .tablet__width--2 {
+    width: 105%;
+  }
+
+  .gap {
+    margin: 20px 0 30px 0;
+  }
+
+  .gap__2 {
+    margin-bottom: 37px;
+  }
+
   .pricing__container {
     padding: 220px 0 100px 0;
     display: flex;
@@ -1595,8 +1656,24 @@ Small phones, tablets, large smartphones
     margin-bottom: 60px;
   }
 
+  .green__button,
+  .white__button,
+  .red__button {
+    height: 55px;
+    width: 67%;
+  }
+
   .blue__h1--2 {
     width: 90%;
+    line-height: 72px;
+  }
+
+  .plan__h1 {
+    letter-spacing: 2px;
+  }
+
+  .h1__margin {
+    margin-top: 23px;
   }
 
   .gray__text--2 {
@@ -1638,9 +1715,15 @@ Small phones, tablets, large smartphones
     margin-left: 25px;
   }
 
+  .testimonials__paragraph {
+    margin-bottom: 42px;
+  }
+
   .testimonials__h3--2 {
     line-height: 30px;
-    font-size: 21px;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
   }
 
   .testimonials__h4 {
@@ -1658,8 +1741,8 @@ Small phones, tablets, large smartphones
 
   .blue__h1--3 {
     color: rgb(36, 62, 99);
-    font-size: 40px;
     letter-spacing: 1.3px;
+    font-size: 36px;
     font-weight: 900;
   }
 
@@ -1693,6 +1776,7 @@ Small phones, tablets, large smartphones
     flex-direction: column;
     width: 720px;
     height: 330px;
+    padding: 80px 160px;
     margin: 0 30px;
   }
 
@@ -1936,7 +2020,7 @@ Small phones, large smartphones
   }
 
   .gray__text--2 {
-    width: 520px;
+    width: 90%;
     font-size: 14px;
     font-weight: 500;
   }
@@ -2013,7 +2097,7 @@ Small phones, large smartphones
   .white__button,
   .red__button {
     height: 55px;
-    width: 290px;
+    width: 76%;
   }
 
   .plan__h1,
@@ -2080,7 +2164,8 @@ Small phones, large smartphones
   }
 
   .testimonials__image--container {
-    width: 70px;
+    /* width: 70px; */
+    width: 40%;
     height: 70px;
     margin: 0 0 10px 0;
   }
