@@ -1119,7 +1119,7 @@ Questions
   justify-content: center;
 }
 
-.gray__custom__2 {
+.gray__custom--2 {
   width: 530px;
   text-align: center;
 }
@@ -1872,7 +1872,9 @@ Small phones, large smartphones
   }
 
   .blue__h1--2 {
-    font-size: 38px;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 54px;
   }
 
   .h1__margin {
@@ -1920,11 +1922,12 @@ Small phones, large smartphones
     text-align: center;
     margin-top: 15px;
     padding-bottom: 6px;
+    width: 110%;
   }
 
   .medium__paragraph {
     text-align: center;
-    width: 160%;
+    width: 200%;
   }
 
   .advertisement__container {
@@ -1992,7 +1995,7 @@ Small phones, large smartphones
     align-items: center;
   }
 
-  .steps {
+  .step {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2023,6 +2026,7 @@ Small phones, large smartphones
     width: 90%;
     font-size: 14px;
     font-weight: 500;
+    line-height: 22.75px;
   }
 
   .values__container {
@@ -2047,6 +2051,8 @@ Small phones, large smartphones
 
   .values__left {
     width: 90%;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2072,6 +2078,10 @@ Small phones, large smartphones
     justify-content: center;
   }
 
+  .tablet__width--2 {
+    width: 90%;
+  }
+
   .gap {
     margin: 20px 0 30px 0;
   }
@@ -2081,7 +2091,7 @@ Small phones, large smartphones
   }
 
   .gap__3 {
-    margin: 23px 0 23px 0;
+    margin: 20px 0 16px 0;
   }
 
   .pricing__container {
@@ -2090,7 +2100,8 @@ Small phones, large smartphones
 
   .plan,
   .blue {
-    height: 590px;
+    height: 585px;
+    width: 400px;
   }
 
   .green__button,
@@ -2103,6 +2114,15 @@ Small phones, large smartphones
   .plan__h1,
   .plan__h1--white {
     font-size: 36px;
+    font-weight: 600;
+  }
+
+  .plan__h2 {
+    letter-spacing: 0;
+    margin: 35px 0 15px 0;
+  }
+
+  .plan__h3 {
     font-weight: 700;
   }
 
@@ -2110,6 +2130,12 @@ Small phones, large smartphones
     display: flex;
     flex-direction: column;
     padding-bottom: 173px;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .testimonials__left {
@@ -2124,8 +2150,25 @@ Small phones, large smartphones
 
   .testimonials__right {
     display: flex;
-    justify-content: center;
-    width: 80%;
+    align-items: center;
+    width: 100%;
+  }
+
+  .testimonials__title {
+    font-size: 17px;
+  }
+
+  .testimonials__paragraph {
+    width: 87%;
+  }
+  
+  .mobile__width--2 {
+    width: 90%;
+    text-align: center;
+  }
+
+  .custom__text {
+    font-size: 15px;
   }
 
   .blue__h1--3 {
@@ -2164,14 +2207,14 @@ Small phones, large smartphones
   }
 
   .testimonials__image--container {
-    /* width: 70px; */
     width: 40%;
     height: 70px;
     margin: 0 0 10px 0;
   }
 
-  .gray__custom__2 {
-    width: 90%;
+  .gray__custom--2 {
+    width: 100%;
+    max-width: 500px;
     font-size: 15px;
   }
 
@@ -2179,8 +2222,12 @@ Small phones, large smartphones
     padding-bottom: 163px;
   }
 
+  .questions__top {
+    padding-left: 10px;
+  }
+
   .questions__bottom {
-    padding: 55px 0 0 35px;
+    padding: 55px 0 0 10px;
   }
 
   .accordion__label {
@@ -2196,17 +2243,32 @@ Small phones, large smartphones
     font-size: 19px;
   }
 
+  .gray__custom--2 {
+    width: 100%;
+    font-size: 14px;
+  }
+
   .contact__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 88%;
     height: 370px;
     padding: 70px 0;
-    margin: 0 32px;
+    margin: 0 0 0 32px;
+  }
+  
+  .contact__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .contact__h2 {
     font-size: 24px;
     font-weight: 700;
     width: 80%;
+    margin-bottom: 5px;
   }
 
   .contact__buttons {
@@ -2214,10 +2276,14 @@ Small phones, large smartphones
     flex-direction: column;
   }
 
+  .contact__h2 {
+    line-height: 36px;
+  }
+
   .red__button--2 {
     height: 48px;
     width: 140px;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
     font-size: 16px;
     font-weight: 700;
   }
