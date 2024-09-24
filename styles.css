@@ -2364,15 +2364,18 @@ Small phones, large smartphones
   }
 
   .links__container {
-    height: 400px;
+    height: 300px;
+    padding-top: 50px;
   }
   
   .links__line {
     margin-top: 90px;
+    border: none;
   }
 
   .footer__container {
-    height: 240px;
+    height: 280px;
+    padding-top: 55px;
   }
 
   .links__wrapper {
