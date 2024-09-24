@@ -253,7 +253,8 @@ Landing
 }
 
 .landing__img {
-  width: 97%;
+  max-width: 750px;
+  width: 100%;
   height: 100%;
   transform: translate(20px, 0);
 }
@@ -310,8 +311,12 @@ Landing
   cursor: pointer;
 }
 
+.trusted__customers--img--container {
+  max-width: 405px;
+}
+
 .trusted__customers--img {
-  width: 405px;
+  width: 100%;
   height: 35px;
   filter: grayscale(1) invert(1);
 }
@@ -347,7 +352,7 @@ Features
 }
 
 .features__container {
-  padding: 80px 0;
+  padding: 100px 0;
   margin: 0 auto;
   width: 100%;
   max-width: 1030px;
@@ -512,6 +517,10 @@ Advertisement
   width: 50%;
 }
 
+.advertisement__img--container {
+  max-width: 640px;
+}
+
 .advertisement__img {
   border: 1px solid rgb(226, 232, 240);
   border-radius: 4px;
@@ -550,11 +559,16 @@ Steps
 
 .steps__left {
   width: 50%;
-  margin-right: 70px;
+  margin-right: 120px;
+}
+
+.steps__img--container {
+  max-width: 650px;
 }
 
 .steps__img {
-  height: 370px;
+  width: 100%;
+  height: 365px;
   transform: translateY(-20px);
 }
 
@@ -634,6 +648,10 @@ Values
 
 .values__right {
   width: 50%;
+}
+
+.values__img--container {
+  max-width: 640px;
 }
 
 .values__img {
@@ -984,6 +1002,10 @@ Testimonials
   width: 50%;
 }
 
+.testimonials__img--container {
+  max-width: 640px;
+}
+
 .testimonials__img {
   width: 100%;
 }
@@ -1131,19 +1153,26 @@ Questions
 
 .accordion {
   margin-top: 20px;
+  max-width: 900px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(237, 242, 247);
+  transition: background-color 0.3s ease;
+}
+
+.accordion:hover {
+  background-color: rgb(226, 232, 240);
 }
 
 .accordion__label {
-  background-color: rgb(237, 242, 247);
-  border: none;
-  width: 900px;
   padding: 20px 40px;
+  transition: background-color 0.3s ease;
   cursor: pointer;
   display: block;
-  transition: background-color 0.3s ease;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .accordion__label:hover {
@@ -1154,9 +1183,10 @@ Questions
   display: none;
   padding: 0 40px 20px 40px;
   background-color: rgb(237, 242, 247);
-  width: 900px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border: none;
+  border-radius: 10px;
 }
 
 .accordion__content:hover {
@@ -1209,11 +1239,12 @@ Contact
 .contact__wrapper {
   border-radius: 8px;
   height: 282px;
-  width: 1280px;
+  max-width: 1280px;
+  width: 100%;
   background-color: rgb(100, 21, 255);
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 90px 160px;
 }
 
@@ -1462,9 +1493,14 @@ Small phones, tablets, large smartphones
     margin-bottom: 9px;
   }
 
+  .landing__img--container {
+    max-width: 512px;
+    max-height: 370px;
+  }
+
   .landing__img {
-    width: 110%;
-    transform: translateX(-23px);
+    width: 100%;
+    height: 100%;
   }
 
   .landing__paragraph {
@@ -1487,7 +1523,8 @@ Small phones, tablets, large smartphones
   .contact__box {
     margin: 0 0 50px 0;
     padding: 17px 7px 17px 33px;
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
   }
 
   .purple__button--2 {
@@ -1509,9 +1546,13 @@ Small phones, tablets, large smartphones
     align-items: center;
   }
 
+  .trusted__customers--img--container {
+    max-width: 512px;
+  }
+
   .trusted__customers--img {
     height: 42px;
-    width: 101%;
+    width: 100%;
     margin-bottom: 40px;
   }
 
@@ -1550,7 +1591,7 @@ Small phones, tablets, large smartphones
   }
 
   .advertisement__img {
-    width: 96%;
+    width: 100%;
   }
 
   .advertisement__container {
@@ -1582,6 +1623,10 @@ Small phones, tablets, large smartphones
 
   .small__paragraph--2 {
     width: 150%;
+  }
+
+  .steps__container {
+    padding: 200px 0 170px 0;
   }
 
   .steps__left {
@@ -1755,13 +1800,9 @@ Small phones, tablets, large smartphones
     padding-top: 47px;
   }
 
-  .accordion__label {
-    width: 720px;
-    height: 59px;
-  }
-
-  .accordion__content {
-    width: 720px;
+  .accordion {
+    max-width: 720px;
+    width: 100%;
   }
 
   .accordion__h3 {
@@ -1775,7 +1816,8 @@ Small phones, tablets, large smartphones
   .contact__wrapper {
     display: flex;
     flex-direction: column;
-    width: 720px;
+    max-width: 720px;
+    width: 100%;
     height: 330px;
     padding: 80px 160px;
     margin: 0 30px;
@@ -1821,7 +1863,6 @@ Small phones, large smartphones
 */
 
 @media (max-width: 550px) {
-
   .menu__backdrop {
     padding-bottom: 26px;
   }
@@ -1864,8 +1905,12 @@ Small phones, large smartphones
     margin-top: 75px;
   }
 
+  .trusted__customers--img--container {
+    max-width: 485px;
+  }
+
   .trusted__customers--img {
-    width: 135%;
+    width: 100%;
   }
 
   .landing__img {
@@ -1945,9 +1990,16 @@ Small phones, large smartphones
     height: 100%;
   }
 
+  .advertisement__img--container {
+    display: flex;
+    justify-content: center;
+    max-width: 445px;
+    height: 285px;
+  }
+
   .advertisement__img {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     transform: translateX(-7px);
   }
 
@@ -1982,12 +2034,19 @@ Small phones, large smartphones
     margin-right: 0;
   }
 
-  .steps__img {
-    height: 85%;
-    width: 85%;
+  .steps__img--container {
+    display: flex;
+    justify-content: center;
+    max-height: 255px;
+    max-width: 448px;
+    margin-bottom: 65px;
     transform: translateY(0);
     transform: translateX(-15px);
-    margin-bottom: 65px;
+  }
+
+  .steps__img {
+    height: 100%;
+    width: 100%;
   }
 
   .steps__right {
@@ -2042,6 +2101,11 @@ Small phones, large smartphones
     display: flex;
     justify-content: center;
     padding-bottom: 67px;
+  }
+
+  .values__img--container {
+    display: flex;
+    justify-content: center;
   }
 
   .values__img {
@@ -2145,9 +2209,13 @@ Small phones, large smartphones
     padding-bottom: 65px;
   }
 
+  .testimonials__img--container {
+    max-width: 448px;
+  }
+
   .testimonials__img {
-    width: 90%;
-    transform: translateX(10px);
+    width: 100%;
+    transform: translateX(15px);
   }
 
   .testimonials__right {
@@ -2163,7 +2231,7 @@ Small phones, large smartphones
   .testimonials__paragraph {
     width: 87%;
   }
-  
+
   .mobile__width--2 {
     width: 90%;
     text-align: center;
@@ -2232,13 +2300,10 @@ Small phones, large smartphones
     padding: 55px 0 0 10px;
   }
 
-  .accordion__label {
-    width: 505px;
+  .accordion {
+    max-width: 505px;
+    width: 100%;
     height: 100%;
-  }
-
-  .accordion__content {
-    width: 505px;
   }
 
   .accordion__h3 {
@@ -2254,12 +2319,13 @@ Small phones, large smartphones
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 88%;
+    max-width: 486px;
+    width: 100%;
     height: 370px;
     padding: 70px 0;
     margin: 0 0 0 32px;
   }
-  
+
   .contact__buttons {
     display: flex;
     flex-direction: column;
@@ -2300,7 +2366,7 @@ Small phones, large smartphones
   .links__container {
     height: 400px;
   }
-
+  
   .links__line {
     margin-top: 90px;
   }
